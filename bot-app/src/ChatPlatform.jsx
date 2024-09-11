@@ -8,10 +8,10 @@ function ChatPlatform() {
   return (
     <>
     <div>
+    <BotProfile/>
     <MessageInput />
-
     </div>
-      <BotProfile/>
+      
     </>
   )
 }
