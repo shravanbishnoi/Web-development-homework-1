@@ -6,15 +6,16 @@ import '../Css/MessageInput.css';
 function MessageInput() {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [message, setMessage] = useState('');
+  const [result, setResult] = useState('');
 
   const handleEmojiClick = (emojiObject) => {
     setMessage(prevMessage => prevMessage + emojiObject.emoji);
     setShowEmojiPicker(false); // Hide emoji picker after selection
   };
 
-  const handleSubmit = () => {
-    console.log("Message sent:", message);
-    setMessage(''); // Clear the input field after sending
+  const handleProcess = () => {
+    const processedResult = message.toUpperCase(); // Processing: Convert input to uppercase
+    setResult(processedResult); // Update the processed string state
   };
 
   return (
@@ -31,12 +32,19 @@ function MessageInput() {
         type="text"
         className="input-field"
         placeholder="Enter your text..."
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
+        value={message} // Use message state for input value
+        onChange={(e) => setMessage(e.target.value)} // Update message state on input change
       />
-      <button className="send-button" onClick={handleSubmit}>
+      <button className="send-button" onClick={handleProcess}>
         <FaRocket className="horizontal-plane-icon" />
       </button>
+
+      {result && (
+        <div>
+          <h4>Processed String:</h4>
+          <p>{result}</p>
+        </div>
+      )}
     </div>
   );
 }
