@@ -1,0 +1,30 @@
+.bot-profile {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 20px;
+}
+
+.bot-name {
+    color: black;
+    font-size: larger;
+    font-family: sans-serif;
+    margin: 10px 5px;
+}
+
+.bot-profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.bot-username {
+    color: black;
+    font-size: large;
+    font-family: sans-serif;
+    margin: 20px 5px;
+}
+
+.bot-description {
+    color: black;
+    font-size: small;
+    font-family: sans-serif;
+}
