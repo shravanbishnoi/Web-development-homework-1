@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './ChatPlatform.css'
 import MessageInput from './Components/MessageInput'
+import BotProfile from './Components/BotProfile'
 
 function ChatPlatform() {
 
@@ -10,6 +11,7 @@ function ChatPlatform() {
     <MessageInput />
 
     </div>
+      <BotProfile/>
     </>
   )
 }
