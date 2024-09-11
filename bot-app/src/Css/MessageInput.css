@@ -1,0 +1,22 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Adjust width as per your requirement */
+    position: relative; /* Ensures emoji stays outside but aligned */
+  }
+  
+  .input-field {
+    width: 100%; /* Input takes full width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Optional: rounded corners */
+  }
+  
+  .emoji {
+    margin-right: 1%;
+    font-size: 24px; /* Adjust emoji size */
+    cursor: pointer;
+    user-select: none; /* Prevents text selection */
+  }
+  

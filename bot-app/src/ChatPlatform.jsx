@@ -1,13 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './ChatPlatform.css'
+import MessageInput from './Components/MessageInput'
 
 function ChatPlatform() {
 
   return (
     <>
+    <div>
+    <MessageInput />
 
+    </div>
     </>
   )
 }
