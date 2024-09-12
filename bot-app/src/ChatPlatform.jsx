@@ -12,8 +12,6 @@ function ChatPlatform() {
     <BotProfile/>
     <MessageInput />
     </div>
-      
-      <BotProfile/>
       <Message/>
     </>
   )
