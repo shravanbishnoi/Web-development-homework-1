@@ -10,10 +10,8 @@ function Message({message}) {
   return (
     <div className={`message ${message.sender === 'bot' ? 'bot' : 'human'}`}>
       <div className="message-body"><p style={{textAlign: "justify"}}>{message.text}</p></div>
-      <div className="message-header">
-        <div className="message-timeline">
+      <div className="message-header message-timeline">
           {formattedDate}
-        </div>
       </div>
     </div>
   );

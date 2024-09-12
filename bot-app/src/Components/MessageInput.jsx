@@ -40,7 +40,7 @@ function MessageInput({ onNewMessage }) {
         // text = CountCharacters(processedMessage);
         // text = ReplaceSpacesWithUnderscores(processedMessage);
         onNewMessage({ sender: "bot", text: text });
-      }, 1000); // 2 seconds delay
+      }, 10); // 2 seconds delay
       return () => clearTimeout(timer);
     }
   }, [processedMessage]);
