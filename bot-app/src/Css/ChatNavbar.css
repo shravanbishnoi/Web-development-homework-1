@@ -4,13 +4,13 @@
     background-color: whitesmoke;
     padding: 0 30px;
     align-items: center;
-    position: fixed; /* Fix the navbar to the top */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    width: 100%; /* Make the navbar full width */
-    z-index: 1000; /* Ensure the navbar is on top of other content */
-    height: 60px; /* Optional: Set a fixed height */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .profile {

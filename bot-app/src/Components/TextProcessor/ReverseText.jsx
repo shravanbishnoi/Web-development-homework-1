@@ -6,4 +6,4 @@ const ReverseText = (inputString) => {
     return {botName: botname, text: reversedString};
   };
 
-export default ReverseText
+export default ReverseText;

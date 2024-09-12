@@ -11,7 +11,7 @@ function ChatPlatform() {
   const [currentBotName, setCurrentBotname] = useState(messages[0].sender);
 
   const handleNewMessage = (newMessage) => {
-    setMessages((messages) => [...messages, newMessage])
+    setMessages((messages) => [...messages, newMessage]);
   }
 
   useEffect(() => {
