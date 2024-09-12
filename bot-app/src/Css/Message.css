@@ -14,7 +14,7 @@
     border-radius: 5px;
     max-width: 80%;
     width: fit-content;
-    padding: 5px 10px;
+    padding: 0px 10px;
     background-color: rgb(243, 237, 237);
     word-wrap: break-word; /* Ensures that long words or strings will break and wrap to the next line */
     overflow-wrap: break-word; /* Ensures that long words or strings will break and wrap to the next line */
@@ -23,6 +23,7 @@
 .message-body {
     font-family: sans-serif;
     text-wrap: wrap;
+    margin-top: -10px;
 }
 
 
@@ -41,6 +42,6 @@
 .message-header {
     display: flex;
     justify-content: end;
-    font-size: medium;
+    font-size: small;
     font-weight: 500;
 }

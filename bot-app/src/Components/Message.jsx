@@ -1,5 +1,5 @@
 import React from "react";
-import { format } from "date-fns"; // Import format from date-fns
+import { format } from "date-fns";
 import "../Css/Message.css";
 
 function Message({message}) {
