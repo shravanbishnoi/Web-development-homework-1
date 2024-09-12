@@ -1,0 +1,16 @@
+.chat-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 0 30px;
+    align-items: center;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile-name {
+    margin-left: 20px;
+    font-size: large;
+    font-weight: 600;
+}
