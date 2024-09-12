@@ -48,7 +48,7 @@ function MessageInput({ onNewMessage }) {
 
       const { botName, text } = randomFunction(pendingMessage);
 
-      onNewMessage({ sender: "bot", text: text });
+      onNewMessage({ sender: botName, text: text });
 
       setProcessedOnce(true);
     }

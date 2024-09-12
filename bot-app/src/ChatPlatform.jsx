@@ -6,13 +6,12 @@ import Message from "./Components/Message";
 import ChatNavbar from "./Components/ChatNavbar";
 
 function ChatPlatform() {
-  const [messages, setMessages] = useState([{sender: "bot", text: "Hi there, How can help you?"}]);
+  const [messages, setMessages] = useState([{sender: "StringShaper", text: "Hi there, How can help you?"}]);
   const endOfMessageRef = useRef(null);
   const [currentBotName, setCurrentBotname] = useState(messages[0].sender);
 
   const handleNewMessage = (newMessage) => {
     setMessages((messages) => [...messages, newMessage])
-    console.log(messages)
   }
 
   useEffect(() => {
@@ -28,7 +27,7 @@ function ChatPlatform() {
         <ChatNavbar name={currentBotName}/>
       </div>
       <div className="message-window">
-        <BotProfile/>
+        <BotProfile botName={currentBotName} botUserName={`@${currentBotName}`}/>
         {messages.map((message, index) => {
           if (message.sender !== 'human'){
             return <Message key={index} message={message}/>

@@ -3,7 +3,7 @@ const ReverseText = (inputString) => {
     
     const reversedString = cleanedString.split('').reverse().join('');
     const botname = "BackFlipBot";
-    return {botname, text: reversedString};
+    return {botName: botname, text: reversedString};
   };
 
 export default ReverseText

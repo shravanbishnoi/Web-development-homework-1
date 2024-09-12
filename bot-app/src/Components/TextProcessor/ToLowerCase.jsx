@@ -1,5 +1,5 @@
 export const LowercaseProcess = (input) => {
     const botname = "WhisperBot";
-    return {botname, text: input.toLowerCase()};
+    return {botName: botname, text: input.toLowerCase()};
   };
   

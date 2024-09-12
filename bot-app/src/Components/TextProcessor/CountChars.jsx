@@ -1,4 +1,4 @@
 export const CountCharacters = (inputString) => {
-    const botname = "CharCountMaster"
-    return {botname, text: inputString.length};
+    const botname = "CharCountMaster";
+    return {botName: botname, text: inputString.length};
   };
