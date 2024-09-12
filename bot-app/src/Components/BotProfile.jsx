@@ -2,17 +2,19 @@ import React from "react";
 import "../Css/BotProfile.css";
 import { format } from "date-fns";
 import { FaUserCircle } from "react-icons/fa";
-function BotProfile() {
+function BotProfile({botName, botUserName}) {
   const currentDate = new Date();
   const formattedDate = format(currentDate, "dd MMM yyyy, hh:mm a");
+
+
   return (
     <div className="message-profile">
       <div className="bot-profile">
         <div className="bot-profile-image">
           <FaUserCircle className="bot-profile-image" size={40} />
         </div>
-        <div className="bot-name">TextChanger</div>
-        <div className="bot-username">textchanger@dev</div>
+        <div className="bot-name">{botName}</div>
+        <div className="bot-username">{botUserName}</div>
         <div className="bot-description">
           Hello this is bot which respond with random texts.
         </div>

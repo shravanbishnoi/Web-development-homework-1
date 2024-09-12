@@ -4,7 +4,10 @@
     width: 100%; /* Adjust width as per your requirement */
     position: fixed; /* Ensures emoji stays outside but aligned */
     margin-top: 1%;
-    bottom: 20px;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    background-color: white;
   }
   
   .input-field {

@@ -8,7 +8,7 @@ import ChatNavbar from "./Components/ChatNavbar";
 function ChatPlatform() {
   const [messages, setMessages] = useState([{sender: "bot", text: "Hi there, How can help you?"}]);
   const endOfMessageRef = useRef(null);
-
+  const [currentBotName, setCurrentBotname] = useState(messages[0].sender);
 
   const handleNewMessage = (newMessage) => {
     setMessages((messages) => [...messages, newMessage])
@@ -17,18 +17,20 @@ function ChatPlatform() {
 
   useEffect(() => {
     endOfMessageRef.current?.scrollIntoView({behavior: "smooth"})
+    if (messages[messages.length - 1].sender !== "human") {
+      setCurrentBotname(messages[messages.length - 1].sender)
+    }
   }, [messages]);
-
 
   return (
     <div className="bot">
       <div>
-        <ChatNavbar />
+        <ChatNavbar name={currentBotName}/>
       </div>
       <div className="message-window">
         <BotProfile/>
         {messages.map((message, index) => {
-          if (message.sender === 'bot'){
+          if (message.sender !== 'human'){
             return <Message key={index} message={message}/>
           }
           else {return <Message key={index} message={message}/>}
