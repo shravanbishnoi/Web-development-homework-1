@@ -25,6 +25,19 @@
     text-wrap: wrap;
 }
 
+
+.message.bot {
+    background-color: #e0e0e0; /* Light grey for bot messages */
+    text-align: left;
+    margin-right: auto; /* Align to left */
+  }
+
+.message.human {
+    background-color: #007bff; /* Blue for user messages */
+    color: white;
+    text-align: right;
+    margin-left: auto; /* Align to right */
+  }
 .message-header {
     display: flex;
     justify-content: end;

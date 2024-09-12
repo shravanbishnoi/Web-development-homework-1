@@ -25,10 +25,16 @@ function ChatPlatform() {
       <div>
         <ChatNavbar />
       </div>
-      <div className="message-window" ref={endOfMessageRef}>
+      <div className="message-window">
         <BotProfile/>
-        <Message message={messages[messages.length - 1]}/>
+        {messages.map((message, index) => {
+          if (message.sender === 'bot'){
+            return <Message key={index} message={message}/>
+          }
+          else {return <Message key={index} message={message}/>}
+})}
       </div>
+      <div ref={endOfMessageRef} />
       <div className="chat-input"><MessageInput onNewMessage={handleNewMessage}/></div>
     </div>
   );

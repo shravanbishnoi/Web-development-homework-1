@@ -8,7 +8,7 @@ function Message({message}) {
   const formattedDate = format(currentDate, "h:mm a");
 
   return (
-    <div className="message">
+    <div className={`message ${message.sender === 'bot' ? 'bot' : 'human'}`}>
       <div className="message-body"><p style={{textAlign: "justify"}}>{message.text}</p></div>
       <div className="message-header">
         <div className="message-timeline">

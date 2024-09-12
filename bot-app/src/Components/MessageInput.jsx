@@ -21,8 +21,11 @@ function MessageInput({ onNewMessage }) {
   };
 
   const handleProcess = () => {
+    if (message.trim() === '') return;
+
     onNewMessage({ sender: "human", text: message });
     setProcessedMessage(message);
+    setMessage("");
   };
 
   useEffect(() => {
@@ -32,13 +35,12 @@ function MessageInput({ onNewMessage }) {
         text = CountWords(processedMessage);
         text = CountVowelsAndConsonants(processedMessage);
         text = UppercaseProcess(processedMessage);
-        text = LowercaseProcess(processedMessage);
-        text = ReverseText(processedMessage);
-        text = CountCharacters(processedMessage);
-        text = ReplaceSpacesWithUnderscores(processedMessage);
-        setMessage(""); // Clear the message
+        // text = LowercaseProcess(processedMessage);
+        // text = ReverseText(processedMessage);
+        // text = CountCharacters(processedMessage);
+        // text = ReplaceSpacesWithUnderscores(processedMessage);
         onNewMessage({ sender: "bot", text: text });
-      }, 2000); // 2 seconds delay
+      }, 1000); // 2 seconds delay
       return () => clearTimeout(timer);
     }
   }, [processedMessage]);
