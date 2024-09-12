@@ -15,8 +15,9 @@ const CountVowelsAndConsonants = (inputString) => {
         }
       }
     }
+    const botname = "VocalMaster";
     counts = `Vowels: ${vowelsCount} \n Consonants: ${consonantsCount}`
-    return counts
+    return {botname, text: counts}
   };
 
 export default CountVowelsAndConsonants

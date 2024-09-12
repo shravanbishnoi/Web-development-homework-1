@@ -1,4 +1,5 @@
 export const UppercaseProcess = (input) => {
-    return input.toUpperCase();
+  const botname = "ShoutBot";
+    return {botname, text: input.toUpperCase()};
   };
   

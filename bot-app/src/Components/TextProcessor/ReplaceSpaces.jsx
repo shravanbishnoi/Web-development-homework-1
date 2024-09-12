@@ -1,4 +1,5 @@
 export const ReplaceSpacesWithUnderscores = (inputString) => {
-    return inputString.replace(/\s/g, '_');
+    const botname = "SpaceSwapper";
+    return {botname, text: inputString.replace(/\s/g, '_')};
   };
   
