@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     width: 100%; /* Adjust width as per your requirement */
-    position: relative; /* Ensures emoji stays outside but aligned */
+    position: fixed; /* Ensures emoji stays outside but aligned */
     margin-top: 1%;
+    bottom: 20px;
   }
   
   .input-field {

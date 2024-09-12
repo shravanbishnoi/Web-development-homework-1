@@ -1,8 +1,15 @@
 .bot-profile {
-    background-color: aliceblue;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
-
+.message-profile {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: aliceblue;
+}
 .bot-name {
     color: black;
     font-size: larger;

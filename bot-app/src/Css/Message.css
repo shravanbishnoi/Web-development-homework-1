@@ -12,12 +12,17 @@
     margin: 15px 10px;
     border: 1px solid rgb(96, 93, 93);
     border-radius: 5px;
-    width: 80%;
+    max-width: 80%;
+    width: fit-content;
     padding: 5px 10px;
     background-color: rgb(243, 237, 237);
+    word-wrap: break-word; /* Ensures that long words or strings will break and wrap to the next line */
+    overflow-wrap: break-word; /* Ensures that long words or strings will break and wrap to the next line */
 }
+
 .message-body {
     font-family: sans-serif;
+    text-wrap: wrap;
 }
 
 .message-header {

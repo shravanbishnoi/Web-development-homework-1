@@ -6,14 +6,16 @@ function BotProfile() {
   const currentDate = new Date();
   const formattedDate = format(currentDate, "dd MMM yyyy, hh:mm a");
   return (
-    <div className="bot-profile">
-      <div className="bot-profile-image">
-      <FaUserCircle className="bot-profile-image" size={40} />
-      </div>
-      <div className="bot-name">TextChanger</div>
-      <div className="bot-username">textchanger@dev</div>
-      <div className="bot-description">
-        Hello this is bot which respond with random texts.
+    <div className="message-profile">
+      <div className="bot-profile">
+        <div className="bot-profile-image">
+          <FaUserCircle className="bot-profile-image" size={40} />
+        </div>
+        <div className="bot-name">TextChanger</div>
+        <div className="bot-username">textchanger@dev</div>
+        <div className="bot-description">
+          Hello this is bot which respond with random texts.
+        </div>
       </div>
       <div className="date-line">
         <span className="line"></span>
