@@ -12,6 +12,10 @@ function ChatPlatform() {
     <BotProfile/>
     <MessageInput />
     </div>
+<<<<<<< HEAD
+=======
+      <Message/>
+>>>>>>> 06954cd4960680d9de7ddf4ab1ae60580f00c039
     </>
   )
 }

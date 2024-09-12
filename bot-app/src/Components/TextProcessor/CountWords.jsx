@@ -9,4 +9,3 @@ const CountWords = (inputString) => {
   }
   
   export default CountWords;
-  

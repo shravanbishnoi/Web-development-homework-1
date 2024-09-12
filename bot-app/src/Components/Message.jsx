@@ -9,13 +9,12 @@ function Message() {
 
   return (
     <div className="message">
-      <div className="message-body">Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan </div>
+      <div className="message-body"><p style={{textAlign: "justify"}}>Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan  am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan Hii I am Narayan </p></div>
       <div className="message-header">
         <div className="message-timeline">
           {formattedDate}
         </div>
       </div>
-      
     </div>
   );
 }

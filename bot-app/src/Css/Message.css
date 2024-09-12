@@ -1,12 +1,28 @@
-.message-header {
-    display: flex;
-    width: 100%;
-    margin: 10px 20px;
-}
 
 .message-timeline {
     font-family: sans-serif;
     font-size: small;
     margin-left: 15px;
     margin-top: 3px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px;
+    border: 1px solid rgb(96, 93, 93);
+    border-radius: 5px;
+    width: 80%;
+    padding: 5px 10px;
+    background-color: rgb(243, 237, 237);
+}
+.message-body {
+    font-family: sans-serif;
+}
+
+.message-header {
+    display: flex;
+    justify-content: end;
+    font-size: medium;
+    font-weight: 500;
 }
