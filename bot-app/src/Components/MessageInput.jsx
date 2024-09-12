@@ -14,6 +14,15 @@ function MessageInput({ onNewMessage }) {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [message, setMessage] = useState("");
   const [processedMessage, setProcessedMessage] = useState("");
+  const processFunctions = [
+    UppercaseProcess,
+    LowercaseProcess,
+    CountWords,
+    CountVowelsAndConsonants,
+    ReverseText,
+    ReplaceSpacesWithUnderscores,
+    CountCharacters
+  ];
 
   const handleEmojiClick = (emojiObject) => {
     setMessage((prevMessage) => prevMessage + emojiObject.emoji);
@@ -29,13 +38,15 @@ function MessageInput({ onNewMessage }) {
     if (processedMessage) {
       const timer = setTimeout(() => {
         let text = "";
-        text = CountWords(processedMessage);
-        text = CountVowelsAndConsonants(processedMessage);
-        text = UppercaseProcess(processedMessage);
-        text = LowercaseProcess(processedMessage);
-        text = ReverseText(processedMessage);
-        text = CountCharacters(processedMessage);
-        text = ReplaceSpacesWithUnderscores(processedMessage);
+        const randomFunction = processFunctions[Math.floor(Math.random() * processFunctions.length)];
+        const processedResult = randomFunction(processedMessage);
+        // text = CountWords(processedMessage);
+        // text = CountVowelsAndConsonants(processedMessage);
+        // text = UppercaseProcess(processedMessage);
+        // text = LowercaseProcess(processedMessage);
+        // text = ReverseText(processedMessage);
+        // text = CountCharacters(processedMessage);
+        // text = ReplaceSpacesWithUnderscores(processedMessage);
         setMessage(""); // Clear the message
         onNewMessage({ sender: "bot", text: text });
       }, 2000); // 2 seconds delay
