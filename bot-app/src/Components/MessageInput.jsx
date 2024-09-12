@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import { FaRocket, FaSmile } from 'react-icons/fa';
 import EmojiPicker from 'emoji-picker-react';
 import '../Css/MessageInput.css';
+import { UppercaseProcess } from './TextProcessor/ToUpperCase';
+import { LowercaseProcess } from './TextProcessor/ToLowerCase';
 import CountWords from './TextProcessor/CountWords';
 import CountVowelsAndConsonants from './TextProcessor/CountVowelsAndConsonants';
+import ReverseText from './TextProcessor/ReverseText';
+import { ReplaceSpacesWithUnderscores } from './TextProcessor/ReplaceSpaces';
+import { CountCharacters } from './TextProcessor/CountChars';
 
 function MessageInput() {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
@@ -19,7 +24,11 @@ function MessageInput() {
     let text = '';
     text = CountWords(message);
     text = CountVowelsAndConsonants(message);
-    setResult(text);
+    text = UppercaseProcess(message);
+    text = LowercaseProcess(message);
+    text = ReverseText(message);
+    text = CountCharacters(message)
+    text = ReplaceSpacesWithUnderscores(message);
     setResult(text)
     setMessage('')
   };
@@ -58,8 +67,6 @@ function MessageInput() {
       <button className="send-button" onClick={handleProcess}>
         <FaRocket className="horizontal-plane-icon" />
       </button>
-
-      
     </div>
   );
 }
