@@ -17,3 +17,13 @@ This project is a React-based chat interface where a user can send messages and 
 - Basic Input Validation: The user cannot submit an empty or invalid message.
 - Random Bot Name: The bot's name changes with every message, adding variety to the chat experience.
 - Theme: User can switch themes between light and dark.
+
+## Technologies Used
+- React (Functional Components, Hooks)
+- CSS for styling
+- JavaScript for text transformations
+
+## Getting Started
+### Prerequisites
+To run this project, you need to have Node.js and npm installed on your machine. If you haven't installed them yet, you can download and install from [here]((https://nodejs.org/en)
+
