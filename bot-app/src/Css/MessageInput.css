@@ -69,3 +69,11 @@
     margin-left: 10px;
     color: var(--font-color);
 }
+
+
+@media (min-width: 769px) {
+    .input-container {
+        max-width: 50%;
+        
+    }
+}

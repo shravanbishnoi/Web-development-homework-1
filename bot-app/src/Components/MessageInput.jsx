@@ -13,14 +13,10 @@ import { CountCharacters } from "./TextProcessor/CountChars";
 function MessageInput({ onNewMessage }) {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [message, setMessage] = useState("");
-<<<<<<< HEAD
-  const [processedMessage, setProcessedMessage] = useState("");
-=======
   const [pendingMessage, setPendingMessage] = useState("");
   const [processedOnce, setProcessedOnce] = useState(false);
   const inputRef = useRef(null);
 
->>>>>>> 2edda428103c0676540186ca46970282442afa05
   const processFunctions = [
     UppercaseProcess,
     LowercaseProcess,
@@ -28,11 +24,7 @@ function MessageInput({ onNewMessage }) {
     CountVowelsAndConsonants,
     ReverseText,
     ReplaceSpacesWithUnderscores,
-<<<<<<< HEAD
-    CountCharacters
-=======
     CountCharacters,
->>>>>>> 2edda428103c0676540186ca46970282442afa05
   ];
 
   const handleEmojiClick = (emojiObject) => {
@@ -51,24 +43,6 @@ function MessageInput({ onNewMessage }) {
   };
 
   useEffect(() => {
-<<<<<<< HEAD
-    if (processedMessage) {
-      const timer = setTimeout(() => {
-        let text = "";
-        const randomFunction = processFunctions[Math.floor(Math.random() * processFunctions.length)];
-        const processedResult = randomFunction(processedMessage);
-        // text = CountWords(processedMessage);
-        // text = CountVowelsAndConsonants(processedMessage);
-        // text = UppercaseProcess(processedMessage);
-        // text = LowercaseProcess(processedMessage);
-        // text = ReverseText(processedMessage);
-        // text = CountCharacters(processedMessage);
-        // text = ReplaceSpacesWithUnderscores(processedMessage);
-        setMessage(""); // Clear the message
-        onNewMessage({ sender: "bot", text: text });
-      }, 2000); // 2 seconds delay
-      return () => clearTimeout(timer);
-=======
     if (pendingMessage && !processedOnce) {
       const randomFunction =
         processFunctions[Math.floor(Math.random() * processFunctions.length)];
@@ -78,7 +52,6 @@ function MessageInput({ onNewMessage }) {
       onNewMessage({ sender: botName, text: text });
 
       setProcessedOnce(true);
->>>>>>> 2edda428103c0676540186ca46970282442afa05
     }
   }, [pendingMessage, processedOnce, processFunctions, onNewMessage]);
 
@@ -88,7 +61,6 @@ function MessageInput({ onNewMessage }) {
     }
   };
 
-// Making input field auto focus when page rendered.
   useEffect(() => {
     inputRef.current.focus();
   }, []);
