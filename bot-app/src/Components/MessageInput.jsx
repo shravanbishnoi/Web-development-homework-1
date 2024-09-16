@@ -61,7 +61,6 @@ function MessageInput({ onNewMessage }) {
     }
   };
 
-// Making input field auto focus when page rendered.
   useEffect(() => {
     inputRef.current.focus();
   }, []);
