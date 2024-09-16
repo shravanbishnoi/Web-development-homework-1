@@ -27,8 +27,6 @@ This project is a React-based chat interface where a user can send messages and 
 ### Prerequisites
 To run this project, you need to have Node.js and npm installed on your machine. If you haven't installed them yet, you can download and install from [here](https://nodejs.org/en)
 
-https://github.com/shravanbishnoi/Web-development-homework-1
-
 ## Installation and Setup
 Follow these steps to set up and run the project:
 
