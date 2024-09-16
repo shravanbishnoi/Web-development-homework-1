@@ -45,7 +45,7 @@ const ThemeButton = () => {
       <button 
         onClick={toggleTheme}
         aria-label={isDarkTheme ? 'Switch to light theme' : 'Switch to dark theme'}
-        style={{ background: 'transparent', border: 'none', cursor: 'pointer', paddingTop: "5px", paddingRight: "80px", color: "var(--text-color)"}}
+        style={{ background: 'transparent', border: 'none', cursor: 'pointer', paddingTop: "15px", paddingRight: "30px"}}
       >
         {isDarkTheme 
           ? <FaSun size={30} style={{ color: '#D3D3D3' }} />
