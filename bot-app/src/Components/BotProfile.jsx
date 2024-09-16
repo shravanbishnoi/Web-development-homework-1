@@ -17,7 +17,9 @@ function BotProfile({botName, botUserName}) {
         <div className="bot-name">{botName}</div>
         <div className="bot-username">{botUserName}</div>
         <div className="bot-description">
-          Hello this is bot which respond with random texts.
+        This bot processes text input by performing various operations such as converting to uppercase, 
+        lowercase, and counting vowels and consonants. It's designed to simplify string manipulation with
+         ease and efficiency.
         </div>
       </div>
       <div className="date-line">
