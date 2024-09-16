@@ -13,7 +13,13 @@ import { CountCharacters } from "./TextProcessor/CountChars";
 function MessageInput({ onNewMessage }) {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [message, setMessage] = useState("");
+<<<<<<< HEAD
   const [processedMessage, setProcessedMessage] = useState("");
+=======
+  const [pendingMessage, setPendingMessage] = useState("");
+  const [processedOnce, setProcessedOnce] = useState(false);
+
+>>>>>>> 2edda428103c0676540186ca46970282442afa05
   const processFunctions = [
     UppercaseProcess,
     LowercaseProcess,
@@ -21,7 +27,11 @@ function MessageInput({ onNewMessage }) {
     CountVowelsAndConsonants,
     ReverseText,
     ReplaceSpacesWithUnderscores,
+<<<<<<< HEAD
     CountCharacters
+=======
+    CountCharacters,
+>>>>>>> 2edda428103c0676540186ca46970282442afa05
   ];
 
   const handleEmojiClick = (emojiObject) => {
@@ -30,11 +40,17 @@ function MessageInput({ onNewMessage }) {
   };
 
   const handleProcess = () => {
+    if (message.trim() === "") return;
+
     onNewMessage({ sender: "human", text: message });
-    setProcessedMessage(message);
+
+    setPendingMessage(message);
+    setProcessedOnce(false);
+    setMessage("");
   };
 
   useEffect(() => {
+<<<<<<< HEAD
     if (processedMessage) {
       const timer = setTimeout(() => {
         let text = "";
@@ -51,8 +67,19 @@ function MessageInput({ onNewMessage }) {
         onNewMessage({ sender: "bot", text: text });
       }, 2000); // 2 seconds delay
       return () => clearTimeout(timer);
+=======
+    if (pendingMessage && !processedOnce) {
+      const randomFunction =
+        processFunctions[Math.floor(Math.random() * processFunctions.length)];
+
+      const { botName, text } = randomFunction(pendingMessage);
+
+      onNewMessage({ sender: botName, text: text });
+
+      setProcessedOnce(true);
+>>>>>>> 2edda428103c0676540186ca46970282442afa05
     }
-  }, [processedMessage]);
+  }, [pendingMessage, processedOnce, processFunctions, onNewMessage]);
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {

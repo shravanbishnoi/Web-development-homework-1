@@ -4,7 +4,15 @@
     background-color: whitesmoke;
     padding: 0 30px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .profile {
     display: flex;
     align-items: center;
@@ -13,4 +21,7 @@
     margin-left: 20px;
     font-size: large;
     font-weight: 600;
+}
+.pin-message {
+    margin-right: 60px;
 }

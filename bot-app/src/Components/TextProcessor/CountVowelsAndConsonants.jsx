@@ -3,7 +3,7 @@ const CountVowelsAndConsonants = (inputString) => {
     const vowels = 'aeiouAEIOU';
     let vowelsCount = 0;
     let consonantsCount = 0;
-    let counts = ''
+    let counts = '';
 
 
     for (let char of inputString) {
@@ -15,8 +15,9 @@ const CountVowelsAndConsonants = (inputString) => {
         }
       }
     }
-    counts = `Vowels: ${vowelsCount} \n Consonants: ${consonantsCount}`
-    return counts
+    const botname = "VocalMaster";
+    counts = `Vowels: ${vowelsCount} \n Consonants: ${consonantsCount}`;
+    return {botName: botname, text: counts};
   };
 
-export default CountVowelsAndConsonants
+export default CountVowelsAndConsonants;

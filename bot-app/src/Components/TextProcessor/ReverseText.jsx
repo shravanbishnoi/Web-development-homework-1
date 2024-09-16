@@ -2,8 +2,8 @@ const ReverseText = (inputString) => {
     const cleanedString = inputString.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
     
     const reversedString = cleanedString.split('').reverse().join('');
-    
-    return reversedString;
+    const botname = "BackFlipBot";
+    return {botName: botname, text: reversedString};
   };
 
-export default ReverseText
+export default ReverseText;
