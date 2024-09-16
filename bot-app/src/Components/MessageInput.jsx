@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaRocket, FaSmile } from "react-icons/fa";
 import EmojiPicker from "emoji-picker-react";
 import "../Css/MessageInput.css";
@@ -15,6 +15,7 @@ function MessageInput({ onNewMessage }) {
   const [message, setMessage] = useState("");
   const [pendingMessage, setPendingMessage] = useState("");
   const [processedOnce, setProcessedOnce] = useState(false);
+  const inputRef = useRef(null);
 
   const processFunctions = [
     UppercaseProcess,
@@ -60,6 +61,12 @@ function MessageInput({ onNewMessage }) {
     }
   };
 
+// Making input field auto focus when page rendered.
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
+
   return (
     <div className="input-container">
       <div className="emoji-container">
@@ -80,6 +87,7 @@ function MessageInput({ onNewMessage }) {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         onKeyDown={handleKeyPress}
+        ref={inputRef}
       />
       <button className="send-button" onClick={handleProcess}>
         <FaRocket className="horizontal-plane-icon" />

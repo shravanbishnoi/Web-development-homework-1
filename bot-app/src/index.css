@@ -1,0 +1,10 @@
+:root {
+    --primary-color: rgb(228, 242, 255);
+    --navbar-color: whitesmoke;
+    --background-color: aliceblue;
+    --font-color: #333333;
+    --bot-message-color: hsl(125, 74%, 79%);
+    --human-message-color: #70a0d2;
+    --border-color: rgb(43, 42, 42);
+  }
+  

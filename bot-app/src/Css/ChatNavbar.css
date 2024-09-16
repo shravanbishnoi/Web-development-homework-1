@@ -1,10 +1,12 @@
+@import "../index.css";
 .chat-navbar {
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: var(--navbar-color);
     padding: 0 30px;
     align-items: center;
     position: fixed;
+    color: var(--font-color);
     top: 0;
     left: 0;
     width: 100%;

@@ -1,4 +1,9 @@
+@import "./index.css";
 .message-window {
     padding-top: 50px;
     padding-bottom: 80px;
+}
+
+body {
+    background-color: var(--background-color);
 }

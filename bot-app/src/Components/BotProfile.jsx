@@ -1,7 +1,8 @@
 import React from "react";
 import "../Css/BotProfile.css";
 import { format } from "date-fns";
-import { FaUserCircle } from "react-icons/fa";
+import { FaRobot } from "react-icons/fa";
+
 function BotProfile({botName, botUserName}) {
   const currentDate = new Date();
   const formattedDate = format(currentDate, "dd MMM yyyy, hh:mm a");
@@ -11,7 +12,7 @@ function BotProfile({botName, botUserName}) {
     <div className="message-profile">
       <div className="bot-profile">
         <div className="bot-profile-image">
-          <FaUserCircle className="bot-profile-image" size={40} />
+          <FaRobot className="bot-profile-image" size={40} />
         </div>
         <div className="bot-name">{botName}</div>
         <div className="bot-username">{botUserName}</div>
