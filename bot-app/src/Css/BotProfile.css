@@ -1,6 +1,8 @@
+@import "../index.css";
 .bot-profile {
     padding: 20px;
     display: flex;
+    color: var(--font-color);
     flex-direction: column;
     justify-items: center;
 }
@@ -8,10 +10,10 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
-    background-color: aliceblue;
+    background-color: var(--background-color);
 }
 .bot-name {
-    color: black;
+    color: var(--font-color);
     font-size: larger;
     font-family: sans-serif;
     margin: 10px 5px;
@@ -23,14 +25,14 @@
     border-radius: 100%;
 }
 .bot-username {
-    color: black;
+    color: var(--font-color);
     font-size: large;
     font-family: sans-serif;
     margin: 20px 5px;
 }
 
 .bot-description {
-    color: black;
+    color: var(--font-color);
     font-size: small;
     font-family: sans-serif;
 }
@@ -40,12 +42,13 @@
     align-items: center;
     width: 100%;
     margin-top: 20px;
+    color: var(--font-color);
   }
   
   .line {
     flex-grow: 1;
     height: 1px;
-    background-color: #ccc;
+    background-color: var(--font-color);
     margin: 0 10px;
   }
   
@@ -53,4 +56,5 @@
     font-weight: bold;
     white-space: nowrap;
     padding: 0 10px;
+    color: var(--font-color);
   }
