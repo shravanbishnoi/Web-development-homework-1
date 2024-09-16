@@ -3,36 +3,30 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--navbar-color);
-    padding: 0 30px;
-    align-items: center;
     position: fixed;
     color: var(--font-color);
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
     height: 60px;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .profile {
     display: flex;
     align-items: center;
+    padding-left: 25px;
 }
 .profile-name {
     margin-left: 20px;
     font-size: large;
     font-weight: 600;
 }
-.pin-message {
-    margin-right: 60px;
-}
 
 
 @media (min-width: 769px) {
     .chat-navbar {
-        max-width: 50%;
-        margin-left: 25%;
+        width: 50%;
+        margin: 0 auto;
     }
 }

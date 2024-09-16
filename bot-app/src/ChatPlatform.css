@@ -11,6 +11,6 @@ body {
 @media (min-width: 769px) {
     .bot {
         max-width: 50%;
-        margin-left: 25%;
+        margin: 0 auto;
     }
 }
