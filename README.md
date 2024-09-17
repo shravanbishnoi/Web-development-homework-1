@@ -1,6 +1,8 @@
 # React Chat Bot Interface (StringShaper)
 This project is a React-based chat interface where a user can send messages and interact with a simple bot. The bot performs random text transformations on the user's messages and responds within the chat interface. This chat app mimics the look and feel of popular messaging platforms like Discord or Slack and demonstrates various text manipulation techniques.
 
+Have a chat with our bot: [here](https://narayan-jat.github.io/StringShaper-Bot/)
+
 ## Features
 - User Input and Bot Response: The user sends a message, and the bot replies with a transformed version of the message.
 - Random Text Transformations: The bot randomly applies one of five transformations to the user’s input:
@@ -47,3 +49,7 @@ This command will start the app and open it in your default web browser by `ctrl
 
 ## Contributing
 Feel free to open issues or submit pull requests if you have suggestions for improvements or new features!
+
+## Author
+- Shravan Bishnoi [Github Profile](https://github.com/shravanbishnoi/)
+- Narayan Jat [Github Profile](https://github.com/narayan-jat)
