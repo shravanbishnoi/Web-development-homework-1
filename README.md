@@ -50,6 +50,6 @@ This command will start the app and open it in your default web browser by `ctrl
 ## Contributing
 Feel free to open issues or submit pull requests if you have suggestions for improvements or new features!
 
-## Author
+## Authors
 - Shravan Bishnoi [Github Profile](https://github.com/shravanbishnoi/)
 - Narayan Jat [Github Profile](https://github.com/narayan-jat)
